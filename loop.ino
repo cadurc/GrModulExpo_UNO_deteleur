@@ -7,7 +7,6 @@ void loop() {
 
   /////////////////////////////////////////////////////////// GESTION DES BP //////////////////////////////////////////////////////////
   if (digitalRead(A0) == 0) {
-    Serial.println("Appui A0");
     mvt(1,165);//180
     CAg1 = true;
     delay(1000);
@@ -16,8 +15,7 @@ void loop() {
     mvt(1,180);//165
     CAg1 = false;
   }
-  if (digitalRead(A1) == 0) {
-    Serial.println("Appui A1");    
+  if (digitalRead(A1) == 0) {  
     mvt(2,165);
     CAg2 = true;
     delay(1000);
@@ -27,7 +25,6 @@ void loop() {
     CAg2 = false;
   }
   if (digitalRead(A2) == 0) {
-    Serial.println("Appui A2");    
     mvt(3,165);
     CAg3 = true;
     delay(1000);
@@ -37,7 +34,6 @@ void loop() {
     CAg3 = false;
   }
   if (digitalRead(A3) == 0) {
-    Serial.println("Appui A4");    
     mvt(4,165);
     CAg4 = true;
     delay(1000);
@@ -47,7 +43,6 @@ void loop() {
     CAg4 = false;
   }
   if (digitalRead(A4) == 0) {
-    Serial.println("Appui A4");    
     mvt(5,165);
     CAg5 = true;
     delay(1000);
@@ -57,7 +52,6 @@ void loop() {
     CAg5 = false;
   }
   if (digitalRead(A5) == 0) {
-    Serial.println("Appui A5");    
     mvt(6,165);
     CAg6 = true;
     delay(1000);
@@ -66,7 +60,6 @@ void loop() {
     mvt(6,180);
     CAg6 = false;
   }
-
 
 
 
